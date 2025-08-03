@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panda Memory Maze</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Home Screen -->
+   <section id="home-screen" class="screen show">
+    <div class="container">
+      <img src="https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3MXNrZ29maHZlbHhvdHhodHk5YXBiODg4YjUyYzdyMGhwNjN3b2dtcCZlcD12MV9zdGlja2Vyc19zZWFyY2gmY3Q9cw/A8ZKGHwM5lWpSqd8rX/giphy.gif" alt="Panda" class="panda-img" />
+      <h1>🐼 Panda Memory Maze</h1>
+      <button onclick="showGridSelection()">Start</button>
+    </div>
+    <footer>Made with 💖 and pandas for your brain</footer>
+  </section>
+
+  <!-- Grid Selection Screen -->
+  <section id="grid-selection" class="screen">
+    <div class="container">
+      <h2>Select Grid Size</h2>
+      <select id="grid-size">
+        <option value="4">4 × 4</option>
+        <option value="8">8 × 8</option>
+        <option value="12">12 × 12</option>
+      </select>
+      <button onclick="startGame()">Play</button>
+    </div>
+    <footer>Made with 💖 and pandas for your brain</footer>
+  </section>
+
+  <!-- Game Screen (NO FOOTER HERE) -->
+  <section id="game-screen" class="screen">
+    <div class="level-indicator" id="level-info"></div>
+      <h2>Good Luck! 🧠</h2>
+      <div id="maze-container" class="maze-grid"></div>
+      <button class="back-btn" onclick="showGridSelection()">🔙 Back to Grid</button>
+    </div>
+  </section>
+
+  <!-- UI Feedback Elements -->
+  <div class="status-message" id="status"></div>
+  <div class="level-indicator" id="level-info"></div>
+  <button id="retry-btn" class="retry-btn" onclick="retryGame()">🔁 Retry</button>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
