@@ -3,6 +3,6 @@ A fun, memory-based puzzle game built with HTML, CSS, and JavaScript
 ## Live Game
 [Play Now]( https://elizabeth543.github.io/Memory-Maze-Game/)
 ## Screenshots
-[HomeScreen](images/Gameplay.png)
-[GridSelection]
-[Gameplay]
+[HomeScreen](images/HomeScreen.png)
+[GridSelection](images/HomeScreen.png)
+[Gameplay](images/Gameplay.png)
